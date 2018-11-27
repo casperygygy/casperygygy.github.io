@@ -1,0 +1,37 @@
+.nav__dropdown
+    position: absolute
+    top: 100%
+    background-color: $mainColor
+    width: 240px
+    padding: 30px
+    z-index: 1
+    &:before
+        content: ''
+        position: absolute
+        display: block
+        bottom: 100%
+        +arr(14, 7, $mainColor, t)
+
+    &__wrapper
+        position: relative
+        &:hover
+            .nav__dropdown--animation
+                opacity: 1
+                margin-top: 0
+                left: -10px
+                visibility: visible
+
+    &__list
+        line-height: 40px
+        text-align: left
+    &__link
+        color: #a8a8a8
+        &:hover
+            color: #fff
+
+    &--animation
+        opacity: 0
+        transition: opacity 0.3s, margin-top 0.3s
+        margin-top: 30px
+        left: -10000px
+        visibility: hidden

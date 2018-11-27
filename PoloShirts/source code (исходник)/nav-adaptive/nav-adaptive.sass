@@ -1,0 +1,25 @@
+.nav-adaptive
+    display: none
+    position: relative
+.custom-burger
+    cursor: pointer
+    border: none
+    outline: none
+    background-color: #ffffff
+    width: auto
+
+    &__line
+        width: 17px
+        height: 3px
+        background-color: black
+        margin-bottom: 3px
+        border-radius: 10px
+        cursor: pointer
+        &:last-child
+            margin-bottom: 0
+
+/*********************** Media ***********************/
+
++max-screen(1499px)
+    .nav-adaptive
+        display: block

@@ -1,0 +1,38 @@
+.sort-bar
+    .sort-bar__filter-bar
+        button.sort-bar__filter-bar__button
+            span.icon-filter-icon
+            span.filter-bar__text Filters
+        span.sort-bar__text 34 items found
+
+
+    .sort-bar__sort-menu
+        span.sort-bar__text Sort by
+
+        .sort-bar__menu
+            input(type="radio" id="price" name="sort").sort-input-item
+            label(for="price").sort-label-item Price
+                span.icon-sort-two-arrow-icon
+
+            input(type="radio" id="name" name="sort" checked="").sort-input-item
+            label(for="name").sort-label-item Name
+                span.icon-sort-two-arrow-icon
+
+            input(type="radio" id="data" name="sort").sort-input-item
+            label(for="data").sort-label-item Date
+                span.icon-sort-two-arrow-icon
+        
+        //- ul.sort-bar__sort-display
+        //-     li.sort-bar__sort-display__item
+        //-         a(href="#").sort-bar__sort-display__link
+        //-             span.icon-sort-display-6item-icon
+        //-     li.sort-bar__sort-display__item.active
+        //-         a(href="#").sort-bar__sort-display__link
+        //-             span.icon-sort-display-4item-icon
+
+        .sort-bar__menu-adaptive
+            select.sort-bar__menu-adaptive__select-sort
+                    option(value="") Sort by
+                    option(value="") Price
+                    option(value="") Name
+                    option(value="") Date

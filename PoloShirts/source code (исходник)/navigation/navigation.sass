@@ -1,0 +1,30 @@
+.nav
+    &__list
+        display: flex
+
+    &__item
+        padding: 0 22px
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4)
+            .nav__link
+                &::after
+                    font-family: icomoon !important
+                    color: $FunBlue
+                    content: "\e90f"
+                    font-size: 8px
+                    margin-left: 10px
+    &__link
+        font-size: 14px
+        display: block
+        color: $mainColor
+        line-height: 80px
+
+
+
+/*********************** Media ***********************/
+
++max-screen(1420px)
+    .nav
+        display: none

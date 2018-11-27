@@ -1,0 +1,51 @@
+.search
+    position: relative
+
+    &__input
+        width: 100%
+        height: 30px
+        background-color: #f6f6f6
+        padding: 0 40px 0 20px
+        color: $mainColor
+        font-family: "PT Serif", sans-serif
+        font-size: 12px
+        border: none
+        border-radius: 20px
+        box-sizing: border-box
+        outline: none
+        +placeholder
+            color: #868686
+            font-style: italic
+
+    &__button
+        position: absolute
+        top: 8px
+        right: 8px
+        font-family: 'icomoon' !important
+        background-color: transparent
+        border: none
+        cursor: pointer
+        outline: none
+
+
+    &__adaptive
+        display: none
+        .icon-search
+            border: none
+            outline: none
+            background-color: #ffffff
+            color: black
+            cursor: pointer
+            &:hover
+                color: #1f4ba5
+        
+/*********************** Media ***********************/
+
++max-screen(640px)
+    .seaech
+        width: 0px
+    .search__adaptive
+        display: inline-block
+    .search__form
+        display: none
+        

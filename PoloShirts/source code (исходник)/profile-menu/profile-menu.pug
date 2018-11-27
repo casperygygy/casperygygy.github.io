@@ -1,0 +1,40 @@
+ul.profile-menu
+    //- /*********************** Cart block ***********************/
+
+    li.profile-menu__item.profile-menu__dropdown__wrapper
+        a(href="").profile-menu__link
+            span.profile-menu__icon-bag
+                span.icon-bag
+                span.profile-menu__icon-bag__bagde.bagde 3
+            span.profile-menu__cart-price $165
+
+        .profile-menu__dropdown.profile-menu__dropdown--animation
+            include ../cart/cart
+            
+        
+    //- /*********************** User block ***********************/
+    
+    li.profile-menu__item.profile-menu__dropdown__wrapper.profile-menu__dropdown__wrapper--padding-left-right
+        a(href="").profile-menu__link
+            span.icon-user
+        
+        .profile-menu__dropdown.profile-menu__dropdown--animation.profile-menu__dropdown--animation--margin-top
+            ul.profile-menu__dropdown__list
+                li.profile-menu__dropdown__item
+                    a(href="#").profile-menu__dropdown__link Profile
+                        span.icon-user.profile-menu__dropdown__icon
+                li.profile-menu__dropdown__item
+                    .bagde.profile-menu__dropdown__item__bagde 2
+                    a(href="#").profile-menu__dropdown__link Wishlist
+                        span.icon-heart-user.profile-menu__dropdown__icon
+                li.profile-menu__dropdown__item
+                    a(href="#").profile-menu__dropdown__link Orders
+                        span.icon-basket-user.profile-menu__dropdown__icon
+                li.profile-menu__dropdown__item
+                    a(href="#").profile-menu__dropdown__link Settings
+                        span.icon-gear-user.profile-menu__dropdown__icon
+                li.profile-menu__dropdown__item
+                    a(href="#").profile-menu__dropdown__link Log out
+                        span.icon-power-user.profile-menu__dropdown__icon
+
+

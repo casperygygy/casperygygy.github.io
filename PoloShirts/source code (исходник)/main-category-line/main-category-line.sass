@@ -1,0 +1,32 @@
+.main-category-line
+    height: 180px
+    background-position: right, center
+    background-size: cover
+    background-repeat: no-repeat
+    display: flex
+    justify-content: center
+    position: relative
+    z-index: 0
+    &__description
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+    &__gender
+        color: $FunBlue
+        font-size: 12px
+        font-family: Oswald
+        font-weight: 800
+        text-transform: uppercase
+        &--margin-bottom
+            margin-bottom: 20px
+            display: block
+    &__title
+        font-size: 48px
+        font-family: VarelaRound
+
+    &__bread-crumbs
+        position: absolute
+        left: 30px
+        top: 50%
+        transform: translate(0, -50%)

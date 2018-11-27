@@ -1,0 +1,124 @@
+.filter
+    transition: margin ease .4s
+.accordion
+    width: 240px
+    height: 100%
+    border-right: 1px solid #ececec
+    border-bottom: 1px solid #ececec
+    box-sizing: border-box
+    &__head
+        min-height: 20px
+        padding: 25px 30px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        border-top: 1px solid #ececec
+        cursor: pointer
+        &:first-child
+            border-top: none
+        &:hover, &.active
+            background-color: #ececec
+        &.active
+            span.icon-filter-plus
+                &::before
+                    content: '\e902'
+
+    &__title
+        font-family: Oswald
+        font-size: 14px
+        font-weight: 800
+        text-transform: uppercase
+        letter-spacing: 2px
+    &__icon
+        margin-left: auto
+        
+    &__body
+        padding: 0 30px
+        // display: none
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        &:last-child
+            border-bottom: 1px solid #ececec
+
+    &__check-list
+        padding: 25px 0
+
+    &__check-list__item
+        margin-bottom: 13px
+        &:last-child
+            margin-bottom: 0
+
+    &__check-list__wrapper
+        &:last-child
+            margin-left: auto
+       
+
+    &__checkbox
+        display: flex
+        align-items: center
+        cursor: pointer
+
+    &__size-block, &__color-block
+        display: flex
+        flex-wrap: wrap
+        justify-content: flex-start
+        align-items: center
+.input-checkbox
+    display: none
+    &:checked
+        &~.custom__checkbox
+            background-color: black
+            &:before
+                color: #ffffff
+                
+
+.custom__checkbox
+    position: relative
+    display: block
+    width: 14px
+    height: 14px
+    margin-right: 10px
+    border-radius: 4px
+    background-color: #efefef
+    transition: all linear .3s
+    &:before
+        content: '\e914'
+        font-family: 'icomoon' !important;
+        font-size: 8px
+        position: absolute
+        top: 2px
+        right: 2px
+        left: 2px
+        bottom: 2px
+        transition: all linear .2s
+        display: flex
+        justify-content: center
+        align-items: center
+        color: transparent
+
+
+/*********************** Media ***********************/
+
++max-screen(960px)
+    .hide
+        margin-left: -240px
+
++max-screen(900px)
+    .accordion
+        width: 300px
+    .hide
+        margin-left: -300px
+
++max-screen(772px)
+    .accordion
+        width: 240px
+    .hide
+        margin-left: -240px
+
++max-screen(450px)
+    .accordion
+        width: 100vw
+    .hide
+        margin-left: -100vw

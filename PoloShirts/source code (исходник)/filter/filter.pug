@@ -1,0 +1,254 @@
+aside.filter.hide
+    .accordion
+        .accordion__head
+            h5.accordion__title Category
+            span.accordion__icon.icon-filter-plus
+        .accordion__body
+            ul.accordion__check-list
+                li.accordion__check-list__item
+                    label(for="bags").accordion__checkbox
+                        input(type="checkbox" id="bags").input-checkbox
+                        span.custom__checkbox
+                        span.accordion__checkbox__text Bags
+                li.accordion__check-list__item
+                    label(for="belts").accordion__checkbox
+                        input(type="checkbox" id="belts").input-checkbox
+                        span.custom__checkbox
+                        span.accordion__checkbox__text Belts
+                li.accordion__check-list__item
+                    label(for="Hats").accordion__checkbox
+                        input(type="checkbox" id="Hats").input-checkbox
+                        span.custom__checkbox
+                        span.accordion__checkbox__text Hats, Scarves & Gloves
+                li.accordion__check-list__item
+                    label(for="sunglasses").accordion__checkbox
+                        input(type="checkbox" id="sunglasses").input-checkbox
+                        span.custom__checkbox
+                        span.accordion__checkbox__text Sunglasses
+                li.accordion__check-list__item
+                    label(for="watches").accordion__checkbox
+                        input(type="checkbox" id="watches").input-checkbox
+                        span.custom__checkbox
+                        span.accordion__checkbox__text Watches
+                li.accordion__check-list__item
+                    label(for="wallets").accordion__checkbox
+                        input(type="checkbox" id="wallets").input-checkbox
+                        span.custom__checkbox
+                        span.accordion__checkbox__text Wallets
+                li.accordion__check-list__item
+                    label(for="boat-shoes").accordion__checkbox
+                        input(type="checkbox" id="boat-shoes").input-checkbox
+                        span.custom__checkbox
+                        span.accordion__checkbox__text Boat Shoes
+                li.accordion__check-list__item
+                    label(for="boots").accordion__checkbox
+                        input(type="checkbox" id="boots").input-checkbox
+                        span.custom__checkbox
+                        span.accordion__checkbox__text Boots
+                li.accordion__check-list__item
+                    label(for="deserts-chukkas").accordion__checkbox
+                        input(type="checkbox" id="deserts-chukkas").input-checkbox
+                        span.custom__checkbox
+                        span.accordion__checkbox__text Deserts & Chukkas
+                li.accordion__check-list__item
+                    label(for="espadrilles-sandals").accordion__checkbox
+                        input(type="checkbox" id="espadrilles-sandals").input-checkbox
+                        span.custom__checkbox
+                        span.accordion__checkbox__text Espadrilles & Sandals
+                li.accordion__check-list__item
+                    label(for="flip-flops").accordion__checkbox
+                        input(type="checkbox" id="flip-flops").input-checkbox
+                        span.custom__checkbox
+                        span.accordion__checkbox__text Flip Flops
+                    
+        .accordion__head
+            h5.accordion__title Brand
+            span.accordion__icon.icon-filter-plus
+        .accordion__body
+            ul.accordion__check-list
+                li.accordion__check-list__item
+                    label(for="adidas").accordion__checkbox
+                        input(type="checkbox" id="adidas").input-checkbox
+                        span.custom__checkbox
+                        span.accordion__checkbox__text Adidas
+                li.accordion__check-list__item
+                    label(for="nuke").accordion__checkbox
+                        input(type="checkbox" id="nuke").input-checkbox
+                        span.custom__checkbox
+                        span.accordion__checkbox__text Nuke
+                li.accordion__check-list__item
+                    label(for="reebook").accordion__checkbox
+                        input(type="checkbox" id="reebook").input-checkbox
+                        span.custom__checkbox
+                        span.accordion__checkbox__text Reebook
+                li.accordion__check-list__item
+                    label(for="puma").accordion__checkbox
+                        input(type="checkbox" id="puma").input-checkbox
+                        span.custom__checkbox
+                        span.accordion__checkbox__text Puma
+                li.accordion__check-list__item
+                    label(for="asics").accordion__checkbox
+                        input(type="checkbox" id="asics").input-checkbox
+                        span.custom__checkbox
+                        span.accordion__checkbox__text Asics
+                li.accordion__check-list__item
+                    label(for="new-balance").accordion__checkbox
+                        input(type="checkbox" id="new-balance").input-checkbox
+                        span.custom__checkbox
+                        span.accordion__checkbox__text New balance
+                li.accordion__check-list__item
+                    label(for="converse").accordion__checkbox
+                        input(type="checkbox" id="converse").input-checkbox
+                        span.custom__checkbox
+                        span.accordion__checkbox__text Converse
+        .accordion__head
+            h5.accordion__title Size
+            span.accordion__icon.icon-filter-plus
+        .accordion__body
+             ul.accordion__check-list.accordion__size-block
+                .accordion__check-list__wrapper
+                    li.accordion__check-list__item
+                        label(for="small").accordion__checkbox
+                            input(type="checkbox" id="small").input-checkbox
+                            span.custom__checkbox
+                            span.accordion__checkbox__text S
+                    li.accordion__check-list__item
+                        label(for="medium").accordion__checkbox
+                            input(type="checkbox" id="medium").input-checkbox
+                            span.custom__checkbox
+                            span.accordion__checkbox__text M
+                    li.accordion__check-list__item
+                        label(for="large").accordion__checkbox
+                            input(type="checkbox" id="large").input-checkbox
+                            span.custom__checkbox
+                            span.accordion__checkbox__text L
+                .accordion__check-list__wrapper
+                    li.accordion__check-list__item
+                        label(for="extra-large").accordion__checkbox
+                            input(type="checkbox" id="extra-large").input-checkbox
+                            span.custom__checkbox
+                            span.accordion__checkbox__text XL
+                    li.accordion__check-list__item
+                        label(for="XXL").accordion__checkbox
+                            input(type="checkbox" id="XXL").input-checkbox
+                            span.custom__checkbox
+                            span.accordion__checkbox__text XXL
+                    li.accordion__check-list__item
+                        label(for="XXXL").accordion__checkbox
+                            input(type="checkbox" id="XXXL").input-checkbox
+                            span.custom__checkbox
+                            span.accordion__checkbox__text XXXL
+        .accordion__head
+            h5.accordion__title Price
+            span.accordion__icon.icon-filter-plus
+        .accordion__body
+            include ../price-range-slider/price-range-slider
+
+
+
+
+
+        .accordion__head
+            h5.accordion__title Color
+            span.accordion__icon.icon-filter-plus
+        .accordion__body
+            ul.accordion__check-list.accordion__color-block
+                .accordion__check-list__wrapper
+                    li.accordion__check-list__item
+                        label(for="beige").accordion__checkbox
+                            input(type="checkbox" id="beige").input-checkbox
+                            span.custom__checkbox
+                            span.accordion__checkbox__text Beige
+                    li.accordion__check-list__item
+                        label(for="black").accordion__checkbox
+                            input(type="checkbox" id="black").input-checkbox
+                            span.custom__checkbox
+                            span.accordion__checkbox__text Black
+                    li.accordion__check-list__item
+                        label(for="blue").accordion__checkbox
+                            input(type="checkbox" id="blue").input-checkbox
+                            span.custom__checkbox
+                            span.accordion__checkbox__text Blue
+                    li.accordion__check-list__item
+                        label(for="brown").accordion__checkbox
+                            input(type="checkbox" id="brown").input-checkbox
+                            span.custom__checkbox
+                            span.accordion__checkbox__text Brown
+                    li.accordion__check-list__item
+                        label(for="copper").accordion__checkbox
+                            input(type="checkbox" id="copper").input-checkbox
+                            span.custom__checkbox
+                            span.accordion__checkbox__text Copper
+                    li.accordion__check-list__item
+                        label(for="green").accordion__checkbox
+                            input(type="checkbox" id="green").input-checkbox
+                            span.custom__checkbox
+                            span.accordion__checkbox__text Green
+                    li.accordion__check-list__item
+                        label(for="gray").accordion__checkbox
+                            input(type="checkbox" id="gray").input-checkbox
+                            span.custom__checkbox
+                            span.accordion__checkbox__text Gray
+
+                .accordion__check-list__wrapper
+                    li.accordion__check-list__item
+                        label(for="multi").accordion__checkbox
+                            input(type="checkbox" id="multi").input-checkbox
+                            span.custom__checkbox
+                            span.accordion__checkbox__text Multi
+                    li.accordion__check-list__item
+                        label(for="navy").accordion__checkbox
+                            input(type="checkbox" id="navy").input-checkbox
+                            span.custom__checkbox
+                            span.accordion__checkbox__text Navy
+                    li.accordion__check-list__item
+                        label(for="orange").accordion__checkbox
+                            input(type="checkbox" id="orange").input-checkbox
+                            span.custom__checkbox
+                            span.accordion__checkbox__text Orange
+                    li.accordion__check-list__item
+                        label(for="pink").accordion__checkbox
+                            input(type="checkbox" id="pink").input-checkbox
+                            span.custom__checkbox
+                            span.accordion__checkbox__text Pink
+                    li.accordion__check-list__item
+                        label(for="purple").accordion__checkbox
+                            input(type="checkbox" id="purple").input-checkbox
+                            span.custom__checkbox
+                            span.accordion__checkbox__text Purple
+                    li.accordion__check-list__item
+                        label(for="red").accordion__checkbox
+                            input(type="checkbox" id="red").input-checkbox
+                            span.custom__checkbox
+                            span.accordion__checkbox__text Red
+                    li.accordion__check-list__item
+                        label(for="tan").accordion__checkbox
+                            input(type="checkbox" id="tan").input-checkbox
+                            span.custom__checkbox
+                            span.accordion__checkbox__text Tan
+        .accordion__head
+            h5.accordion__title Style
+            span.accordion__icon.icon-filter-plus
+        .accordion__body
+            ul.accordion__check-list
+                li.accordion__check-list__item
+                    label(for="crew-neck").accordion__checkbox
+                        input(type="checkbox" id="crew-neck").input-checkbox
+                        span.custom__checkbox
+                        span.accordion__checkbox__text Crew Neck
+                li.accordion__check-list__item
+                    label(for="v-neck").accordion__checkbox
+                        input(type="checkbox" id="v-neck").input-checkbox
+                        span.custom__checkbox
+                        span.accordion__checkbox__text V-neck
+                li.accordion__check-list__item
+                    label(for="polo").accordion__checkbox
+                        input(type="checkbox" id="polo").input-checkbox
+                        span.custom__checkbox
+                        span.accordion__checkbox__text Polo
+                li.accordion__check-list__item
+                    label(for="henley").accordion__checkbox
+                        input(type="checkbox" id="henley").input-checkbox
+                        span.custom__checkbox
+                        span.accordion__checkbox__text Henley
+                

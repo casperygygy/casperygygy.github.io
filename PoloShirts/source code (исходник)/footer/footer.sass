@@ -1,0 +1,52 @@
+.footer
+    height: 60px
+    background-color: #222222
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    padding: 0 22px 0 66px
+    font-size: 12px
+    &__license
+        color: #7f7f7f
+    &__terms-block
+        flex-grow: 1
+        display: flex
+        justify-content: center
+        a
+            color: #bcbcbc
+            margin-left: 20px
+            &:first-child
+                margin-left: 0
+            &:hover
+                color: #fff
+
+    &__pay-block
+        display: flex
+        justify-content: center
+        align-items: center
+        img
+            margin-left: 20px
+            &:first-child
+                margin-left: 0
+
+
+
+/*********************** Media ***********************/
+
++max-screen(778px)
+    .footer
+        flex-direction: column
+        justify-content: space-between
+        padding: 22px
+        height: auto
+        &__license
+            padding-bottom: 10px
+        &__terms-block
+            padding-bottom: 10px
+            flex-wrap: wrap
+            justify-content: flex-start
+
++max-screen(405px)
+    .footer__terms-block
+        display: none

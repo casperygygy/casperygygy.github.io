@@ -1,0 +1,70 @@
+mixin adaptiveNavLink(link, text)
+    li.nav-adaptive__category-item
+        a(href=link).nav-adaptive__category-link= text
+
+.nav-adaptive
+    .custom-burger
+        .custom-burger__line
+        .custom-burger__line
+        .custom-burger__line
+
+    .nav-adaptive__dropdown
+        ul.nav-adaptive__list
+            li.nav-adaptive__item    
+                a(href="#").nav-adaptive__link Men
+                ul.nav-adaptive__category-list
+                    +adaptiveNavLink('', 'Bags')
+                    +adaptiveNavLink('', 'Caps & Hats')
+                    +adaptiveNavLink('', 'Gifts')
+                    +adaptiveNavLink('', 'Grooming')
+                    +adaptiveNavLink('', 'Hoodies & Sweatshirts')
+                    +adaptiveNavLink('', 'Jackets & Coats')
+                    +adaptiveNavLink('', 'Jeans')
+                    +adaptiveNavLink('', 'Jewellery')
+                    +adaptiveNavLink('', 'Joggers')
+                    +adaptiveNavLink('', 'Jumpers & Cardigans')
+                    +adaptiveNavLink('', 'Leather Jackets')
+                    +adaptiveNavLink('', 'Long Sleeve T-Shirts')
+                    +adaptiveNavLink('', 'Loungewear')
+                    +adaptiveNavLink('', 'Polo Shirts')
+                    +adaptiveNavLink('', 'Sunglasses')
+                    +adaptiveNavLink('', 'Swimwear')
+            li.nav-adaptive__item    
+                a(href="#").nav-adaptive__link Women
+                ul.nav-adaptive__category-list
+                    +adaptiveNavLink('', 'Shirts')
+                    +adaptiveNavLink('', 'Shoes, Boots & Trainers')
+                    +adaptiveNavLink('', 'Shorts')
+                    +adaptiveNavLink('', 'Suits & Blazers')
+                    +adaptiveNavLink('', 'Sunglasses')
+                    +adaptiveNavLink('', 'Swimwear')
+                    +adaptiveNavLink('', 'Swimwear')
+            li.nav-adaptive__item
+                a(href="#").nav-adaptive__link Accessories
+                ul.nav-adaptive__category-list
+                    +adaptiveNavLink('', 'New Arrivals')
+                    +adaptiveNavLink('', 'Dresses')
+                    +adaptiveNavLink('', 'Tops')
+                    +adaptiveNavLink('', 'Sweaters & Knits')
+                    +adaptiveNavLink('', 'Jackets & Coats')
+                    +adaptiveNavLink('', 'Rompers & Jumpsuits')
+            li.nav-adaptive__item    
+                a(href="#").nav-adaptive__link Kids
+                ul.nav-adaptive__category-list
+                    +adaptiveNavLink('', 'Hair Accessories')
+                    +adaptiveNavLink('', 'Socks & Tights')
+                    +adaptiveNavLink('', 'Hats')
+                    +adaptiveNavLink('', 'Scarves & Gloves')
+                    +adaptiveNavLink('', 'Jackets & Coats')
+                    +adaptiveNavLink('', 'Rompers & Jumpsuits')
+            li.nav-adaptive__item
+                a(href="#").nav-adaptive__link.nav-adaptive__link--color Sale -70%
+            li.nav-adaptive__item.mr-t20  
+                a(href="#").nav-adaptive__link Lookbook
+            li.nav-adaptive__item.mr-t20.mr-b30
+                a(href="#").nav-adaptive__link Blog
+
+            .nav-adaptive__info-block
+                a(href="#").nav-adaptive__info Shipping
+                a(href="#").nav-adaptive__info Payment
+                a(href="#").nav-adaptive__info Help?

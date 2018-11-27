@@ -1,0 +1,135 @@
+.sort-bar
+    display: flex
+    
+    min-height: 60px
+    border-bottom: 1px solid #ececec
+    &__filter-bar
+        display: flex
+        align-items: center
+        padding: 15px 30px
+        width: 240px
+        flex: none
+        border-right: 1px solid #ececec
+        box-sizing: border-box
+        white-space: nowrap
+        &__button
+            background-color: transparent
+            outline: none
+            border: none
+            padding: 0
+            margin-right: 20px
+            color: #979797
+    
+    &__text
+        font-size: 12px
+        color: #979797
+    &__sort-menu
+        display: flex
+        align-items: center
+        padding: 15px 30px
+        flex: 1
+    &__menu
+        display: flex
+        align-items: center
+        position: relative
+        overflow: hidden
+        margin-left: 20px
+        .sort-input-item
+            position: absolute
+            left: -999px
+        .sort-input-item:checked + .sort-label-item
+            color: #ffffff
+            background: $mainColor
+            [class*="icon"]
+                &:before
+                    content: '\e911'
+                    color: #fff
+        .sort-label-item
+            display: flex
+            justify-content: center
+            align-items: center
+            height: 30px
+            padding: 0 20px
+            border-radius: 20px
+            font-size: 12px
+            cursor: pointer
+            [class*="icon"]
+                color: #d5d5d5
+                margin-left: 5px
+    
+    &__sort-display
+        margin-left: auto
+        display: flex
+        align-items: center
+        &__item
+            margin-left: 10px
+            &:first-child
+                margin-left: 0
+            &.active
+                .sort-bar__sort-display__link
+                    color: $mainColor
+        &__link
+            font-size: 16px
+            color: #d5d5d5
+    &__menu-adaptive
+        display: none
+
+.filter-bar__text
+    display: none
+
+/*********************** Media ***********************/
+
++max-screen(960px)
+    .sort-bar
+        &__filter-bar
+            border-right: none
+           
+    .filter-bar__text
+        margin-left: 10px
+        color: #1f4ba5
+    .icon-filter-icon
+        color: #1f4ba5
+
+    .custom-filter
+        border: 2px solid #1f4ba5
+        border-radius: 20px
+        padding: 5px 30px 5px 18px
+        cursor: pointer
+
+    .filter-bar__text
+        display: inline-block
+
++max-screen(651px)
+    .sort-bar
+        justify-content: space-between
+        border-right: 1px solid #ececec
+        &__text
+            display: none
+        &__menu
+            margin: 0
+        &__sort-menu
+            justify-content: flex-end
+        &__sort-display
+            display: none
+
++max-screen(555px)
+    .sort-bar__menu
+        display: none
+    .sort-bar__menu-adaptive
+        display: block
+        font-size: 12px
+        &__select-sort
+            border: none
+            outline: none
+            border: 2px solid #222222
+            border-radius: 20px
+            padding: 4px 20px
+
++max-screen(440px)
+    .sort-bar__filter-bar
+        width: auto
+        padding-right: 0
+        &__button
+            margin: 0
+    .sort-bar__sort-menu
+        padding-left: 0

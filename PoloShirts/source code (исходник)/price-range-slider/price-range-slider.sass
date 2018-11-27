@@ -1,0 +1,48 @@
+.price-range-slider
+    width: 180px
+    height: 10px
+    border-radius: 10px
+    background-color: #efefef
+    margin: 25px 0
+    position: relative
+    &__range-button
+        width: 16px
+        height: 16px
+        border: 4px solid #4069be
+        box-sizing: border-box
+        border-radius: 50%
+        outline: none
+        background-color: #ffffff
+
+        position: absolute
+        top: 50%
+        cursor: pointer
+        transform: translateY(-50%)
+        &--right
+            left: 100px
+    
+    &__div-between
+        position: absolute
+        height: 10px
+        width: 0px
+        border: none
+        background-color: #1f4ba5
+
+    &__output-block
+        display: flex
+        margin-top: 16px
+        width: 222px
+        justify-content: space-between
+    &__output-number
+        border: none
+        outline: none
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none
+    margin: 0
+
+
+
+

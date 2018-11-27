@@ -1,0 +1,57 @@
+.header
+    height: 80px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    border-bottom: 1px solid #ececec
+
+    &__logo
+        padding-right: 38px
+        padding-bottom: 8px
+
+
+    &__search
+        flex: 1
+        min-width: 200px
+        padding: 0 50px 0 70px
+
+    &__location
+        font-size: 12px;
+        color: #868686;
+        &__icon-location
+            margin-right: 10px
+    &__profile-menu
+        padding-left: 67px
+
+    &--indentation
+        margin: 0
+        padding: 0 20px 0 30px
+
+
+/*********************** Media ***********************/
+
++max-screen(1499px)
+    .header__logo
+        padding-right: 0px
+        padding-left: 39px
+        text-align: center
++max-screen(740px)
+    .header__nav,
+    .header__location
+        display: none
+
++max-screen(640px)
+    .header
+        &__search
+            max-width: 15px
+            min-width: 0
+            padding: 0
+            margin-left: auto
+        &__logo
+            padding: 0
+            flex-grow: 1
+            display: flex
+            justify-content: center
+        &__profile-menu
+            padding-left: 25px

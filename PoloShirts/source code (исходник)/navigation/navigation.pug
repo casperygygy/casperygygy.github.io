@@ -1,0 +1,66 @@
+mixin headerNavLink(link, text)
+    li.nav__item
+        a(href=link).nav__link= text
+mixin dropdownNavLink(link, text)
+    li.nav__dropdown__item
+        a(href=link).nav__dropdown__link= text
+
+nav.nav
+    ul.nav__list
+        li.nav__item.nav__dropdown__wrapper
+            a(href="#").nav__link Men
+            .nav__dropdown.nav__dropdown--animation
+                ul.nav__dropdown__list
+                    +dropdownNavLink('', 'Bags')
+                    +dropdownNavLink('', 'Caps & Hats')
+                    +dropdownNavLink('', 'Gifts')
+                    +dropdownNavLink('', 'Grooming')
+                    +dropdownNavLink('', 'Hoodies & Sweatshirts')
+                    +dropdownNavLink('', 'Jackets & Coats')
+                    +dropdownNavLink('', 'Jeans')
+                    +dropdownNavLink('', 'Jewellery')
+                    +dropdownNavLink('', 'Joggers')
+                    +dropdownNavLink('', 'Jumpers & Cardigans')
+                    +dropdownNavLink('', 'Leather Jackets')
+                    +dropdownNavLink('', 'Long Sleeve T-Shirts')
+                    +dropdownNavLink('', 'Loungewear')
+                    +dropdownNavLink('', 'Polo Shirts')
+                    +dropdownNavLink('', 'Sunglasses')
+                    +dropdownNavLink('', 'Swimwear')
+
+        li.nav__item.nav__dropdown__wrapper
+            a(href="#").nav__link Women
+            .nav__dropdown.nav__dropdown--animation
+                ul.nav__dropdown__list
+                    +dropdownNavLink('', 'Shirts')
+                    +dropdownNavLink('', 'Shoes, Boots & Trainers')
+                    +dropdownNavLink('', 'Shorts')
+                    +dropdownNavLink('', 'Suits & Blazers')
+                    +dropdownNavLink('', 'Sunglasses')
+                    +dropdownNavLink('', 'Swimwear')
+        li.nav__item.nav__dropdown__wrapper
+            a(href="#").nav__link Kids
+            .nav__dropdown.nav__dropdown--animation
+                ul.nav__dropdown__list
+                    +dropdownNavLink('', 'New Arrivals')
+                    +dropdownNavLink('', 'Dresses')
+                    +dropdownNavLink('', 'Tops')
+                    +dropdownNavLink('', 'Sweaters & Knits')
+                    +dropdownNavLink('', 'Jackets & Coats')
+                    +dropdownNavLink('', 'Rompers & Jumpsuits')
+        li.nav__item.nav__dropdown__wrapper
+            a(href="#").nav__link Accessories
+            .nav__dropdown.nav__dropdown--animation
+                ul.nav__dropdown__list
+                    +dropdownNavLink('', 'Hair Accessories')
+                    +dropdownNavLink('', 'Sunglasses & Readers')
+                    +dropdownNavLink('', 'Socks & Tights')
+                    +dropdownNavLink('', 'Hats')
+                    +dropdownNavLink('', 'Scarves & Gloves')
+                    +dropdownNavLink('', 'Jackets & Coats')
+                    +dropdownNavLink('', 'Rompers & Jumpsuits')
+
+
+        +headerNavLink('', 'Sale')
+        +headerNavLink('', 'LookBook')
+        +headerNavLink('', 'Blog')

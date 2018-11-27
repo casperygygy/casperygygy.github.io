@@ -1,0 +1,35 @@
+.profile-menu
+    display: flex
+    justify-content: space-between
+    width: 110px
+    align-items: center
+
+    &__item--pd-l-r
+        padding: 0 15px
+    &__link
+        display: block
+        line-height: 80px
+
+    &__cart-price
+        font-family: Oswald
+        font-weight: 800
+        font-size: 14px
+
+
+    &__icon-bag
+        padding-right: 10px
+        position: relative
+        &__bagde
+            position: absolute
+            top: -12px
+            left: 9px
+
+
+/*********************** Media ***********************/
+
++max-screen(640px)
+    .profile-menu__cart-price
+        display: none
+    .profile-menu
+        width: 100%
+        justify-content: flex-end
