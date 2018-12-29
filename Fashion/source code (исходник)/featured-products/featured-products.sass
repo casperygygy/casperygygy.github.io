@@ -1,0 +1,108 @@
+.featured-products
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    &__title
+        padding-bottom: 55px
+    &__category
+        width: 100%
+        padding-bottom: 60px
+    &__slider
+        width: 100%
+
+.product-slider
+    position: relative
+    &__block
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-bottom: 45px
+    &__item
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        margin: 0 10px
+        flex-shrink: 0
+    &__image
+        margin-bottom: 30px
+    &__title
+        font-size: 15px
+        font-weight: 800
+    &__brand
+        padding: 10px 0
+        font-size: 15px
+        color: #909090
+    &__price
+        font-size: 15px
+        &--old
+            text-decoration: line-through
+        &--new
+            font-weight: 800
+        .mr-r-10
+            margin-right: 10px
+    &__button-left
+        position: absolute
+        left: -80px
+        top: 170px
+    &__button-right
+        position: absolute
+        right: -80px
+        top: 170px
+    &__button
+        margin: auto
+
+.button
+    &--product-slider
+        width: 170px
+        padding: 21px 0
+        background-color: transparent
+        border: 2px solid #d9c8aa
+        color: #222222
+        font-size: 12px
+
+.button-left,
+.button-right
+    width: 45px
+    height: 45px
+    border-radius: 50%
+    border: 2px solid #d9d9d9
+    text-align: center
+    font-size: 40px
+    color: #d9d9d9
+    .fa-caret-left
+        margin: 2px 5px 0 0
+    .fa-caret-right
+        margin: 2px 0 0 5px
+
+
+/****************** Media ******************/
++max-screen(1396px)
+    .product-slider__block
+        justify-content: space-around
+    .product-slider__item
+        &:last-child
+            display: none
+    .product-slider__button-left
+        left: -10px
+    .product-slider__button-right
+        right: -10px
++max-screen(1000px)
+    .product-slider__block
+        justify-content: center
+    .product-slider__button-left
+        left: 0px
+    .product-slider__button-right
+        right: 0px
+    .product-slider__item
+        &:nth-child(3)
+            display: none
+  
++max-screen(776px)
+    .product-slider__button-left
+        left: 20px
+    .product-slider__button-right
+        right: 20px
+    .product-slider__item
+        &:nth-child(2)
+            display: none

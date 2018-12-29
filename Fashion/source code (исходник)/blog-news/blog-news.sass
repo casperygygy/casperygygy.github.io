@@ -1,0 +1,82 @@
+.blog-news
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    z-index: 2
+    &__title
+        margin-bottom: 60px
+    &__block
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        z-index: 2
+    &__image
+    &__item
+        position: relative
+        &:first-child
+            margin-right: 25px
+        &__info
+            padding: 20px 30px
+            display: inline-block
+            text-align: center
+            width: 80%
+            position: absolute
+            margin: 0 auto
+            left: 0
+            right: 0
+            bottom: -45px
+            background-color: #ffffff
+        &__title
+            color: #000000
+            font-size: 18px
+            font-weight: 800
+            text-transform: uppercase
+            letter-spacing: .9px
+            margin-bottom: 10px
+        &__date
+            font-size: 14px
+            font-style: italic
+            color: #7d7d7d
+
+    
+/****************** Media ******************/
++max-screen(1200px)
+    .blog-news__item__title
+        font-size: 14px
+
++max-screen(920px)
+    .blog-news__item__title
+        font-size: 10px
+    .blog-news__item__date
+        font-size: 10px
++max-screen(700px)
+    .blog-news__block
+        flex-direction: column
+    .blog-news__item__title
+        font-size: 18px
+    .blog-news__item__date
+        font-size: 14px
+    .blog-news__item
+        margin-bottom: 50px
+        &:first-child
+            margin-right: 0
+
++max-screen(555px)
+    .blog-news__item__title
+        font-size: 14px
+    .blog-news__item__date
+        font-size: 14px
+    .blog-news__item__info
+        padding: 20px 10px
++max-screen(444px)
+    .blog-news__item__title
+        font-size: 10px
+    .blog-news__item__date
+        font-size: 10px
++max-screen(333px)
+    .blog-news__item__title
+        font-size: 8px
+    .blog-news__item__date
+        font-size: 8px

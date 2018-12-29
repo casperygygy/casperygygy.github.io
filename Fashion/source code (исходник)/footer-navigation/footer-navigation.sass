@@ -1,0 +1,55 @@
+.footer-navigation
+    width: 100%
+    background-color: #f8f8f8
+    &__list
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    &__link
+        font-size: 15px
+        font-weight: 800
+        color: #575153
+    &__item
+        padding: 0 15px 25px 15px
+        &:firs-child
+            padding-left: 0
+        &:last-child
+            padding-right: 0
+        &__list
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            padding-top: 40px
+        &__link
+            color: #727272
+            font-size: 14px
+            line-height: 30px
+        &__contact
+            padding-top: 40px
+
+
+.contact
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+    span
+        font-size: 14px
+        font-weight: 800
+    .number,
+    .email,
+    .adress
+        font-size: 14px
+        font-weight: 400
+        color: #727272
+    &__phone
+        padding-bottom: 20px
+    &__email
+        padding-bottom: 45px
+
+
+
+/****************** Media ******************/
++max-screen(330px)
+    .footer-navigation__list
+        justify-content: center

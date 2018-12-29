@@ -1,0 +1,28 @@
+.slider
+    aside.slider__aside
+        include ../aside/aside
+    .slider__item
+        .slider__image
+            img(src="img/slider/slider.png", alt="girl", srcset="")
+        .slider__info
+            h2.slider__headline Summer<br>collection
+            span.slider__number 01 &nbsp &nbsp men's wear
+            .slider__icons
+                //- a(href="").slider__icons-link
+                i.fas.fa-angle-right.active
+                //- a(href="").slider__icons-link
+                i.fas.fa-heart
+                //- a(href="").slider__icons-link
+                i.fas.fa-share-alt
+
+            .slider__text
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                | Vivamus sed fermentum nibh, vel aliquet massa. 
+                | Etiam in magna id risus lacinia luctus eget eu est.
+            a(href="").slider__button.button Shop now
+            .slider__button-nav
+                .slider__button-nav__prev prev
+                .slider__button-nav__next next
+    .slider__special-offer
+        include ../special-offer/special-offer
+        

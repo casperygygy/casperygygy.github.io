@@ -1,0 +1,119 @@
+.slider
+    position: relative
+    background: linear-gradient(#c8cdd0, #cacdd2)
+    &__item
+        display: flex
+        align-items: center
+        box-sizing: border-box
+        position: relative
+    &__image
+        flex-basis: 50%
+        align-self: center
+        img
+            min-width: 460px
+    &__info
+        // align-self: flex-start
+        flex-basis: 50%
+        padding-left: 60px
+        box-sizing: border-box
+        position: relative
+        max-width: 538px
+    &__headline
+        font-size: 70px
+        text-transform: uppercase
+        font-weight: 800
+    &__number
+        font-size: 14px
+        font-weight: 800
+        line-height: 91px
+    &__icons
+        display: flex
+        justify-content: space-between
+        max-width: 142px
+        
+        i.fas
+            width: 33px
+            height: 33px
+            border-radius: 50%
+            border: 1px solid #222222
+            background-color: inherit
+            display: flex
+            justify-content: center
+            align-items: center
+            &.active
+                background-color: #222222
+                color: #ffffff
+    &__text
+        width: 300px
+        font-size: 13px
+        color: #535353
+        line-height: 26px
+        margin-top: 50px
+
+    &__button
+        margin-top: 40px
+    &__button-nav
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        height: 63px
+        position: absolute
+        top: 0
+        right: 7%
+        font-size: 12px
+        letter-spacing: 4px
+        font-weight: 800
+        &__prev
+            cursor: pointer
+            color: #ffffff
+            &::after
+                content: '\27f5'
+                display: block
+        &__next
+            cursor: pointer
+            color: #222222
+            &::after
+                content: '\27f6'
+                display: block
+    &__special-offer
+        position: absolute
+        right: 0
+        bottom: 0
+    
+/****************** Media ******************/
++max-screen(1900px)
+    .slider__special-offer
+        display: none
+
++max-screen(1280px)
+    .slider__headline
+        font-size: 50px
+    .slider__button-nav
+        right: 27%
+        top: -3%
+
++max-screen(1024px)
+    .slider__button-nav
+        top: 30%
+        right: 22%
+
++max-screen(892px)
+    .slider__headline
+        font-size: 30px
+
++max-screen(850px)
+    .slider__image
+        display: none
+    .slider
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 20px 0
+
++max-screen(444px)
+    .slider__aside
+        display: none
+    .slider__text
+        width: auto
+    .slider__button-nav
+        display: none

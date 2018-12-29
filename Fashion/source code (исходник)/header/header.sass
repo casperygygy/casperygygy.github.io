@@ -1,0 +1,49 @@
+.header
+    border-bottom: 6px solid #f3ebdc
+    height: 101px
+    position: relative
+
+    &__wrapper
+        height: 100%
+        padding: 0 54px 0 108px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+    &__logo
+    &__navigation
+        flex-basis: 37.5%
+        padding-right: 30%
+
+
+
+
+/*********************** Media ***********************/
++max-screen(1176px)
+    .header__navigation
+        padding-right: 10%
+        flex-basis: 45%
++max-screen(1024px)
+    .header__wrapper
+        padding: 0 54px 0 54px
+    .header__navigation
+        padding-right: 0
+        flex-basis: 60%
+        
++max-screen(776px)
+    .header__logo
+        flex-basis: 100%
+    .header__navigation
+        flex-basis: 75%
+
++max-screen(555px)
+    .header__logo
+        margin-bottom: 10px
+    .header__navigation
+        flex-basis: 100%
+        margin-bottom: 10px
+    .header__functional
+        flex-basis: 100%
++max-screen(444px)
+    .header__navigation
+        display: none

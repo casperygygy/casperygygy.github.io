@@ -1,0 +1,137 @@
+.offer-blocks
+    display: flex
+    justify-content: space-between
+    &__left-section, &__right-section
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+    &__center-section
+        margin: 0 2.1%
+
+    &__element
+        position: relative
+        color: #2d2b27
+        &--glasses
+            .offer-blocks__deals
+                font-size: 13px
+                text-transform: uppercase
+                font-weight: 400
+                text-align: center
+    
+    &__deals
+        font-size: 22px
+        text-transform: uppercase
+        font-weight: 800
+        text-align: center
+
+    &__info
+        position: absolute
+        z-index: 1
+        left: 36px
+        top: 0
+        display: flex
+        flex-direction: column
+
+    &__category
+        font-size: 13px
+        // line-height: 36px
+        letter-spacing: 0.65px
+        margin-bottom: 15px
+
+    &__name
+        font-size: 19px
+        line-height: 24px
+        font-weight: 800
+        letter-spacing: 1.425
+        margin-bottom: 43px
+
+    &__new
+        position: absolute
+        right: 10px
+        top: 10px
+        font-size: 11px
+        line-height: 14px
+        padding: 5px 10px
+        background-color: #222222
+        color: #ffffff
+        text-transform: uppercase
+        &:before
+            content: ''
+            border: 10px solid transparent
+            border-left: 10px solid #222222
+            position: absolute
+            left: 0
+            bottom: -7px
+
+
+
+/////////// позиционирование info в разных блоках ////////////////
+
+.offer-blocks__center-section
+    .offer-blocks__info
+        top: 23.764%
+
+.offer-blocks__right-section
+    .offer-blocks__info
+        top: 21.2355%
+    .offer-blocks__element--glasses
+        .offer-blocks__info
+            top: 83.606%
+            left: 0
+            right: 0
+
+.offer-blocks__left-section
+    .offer-blocks__info
+        top: 79.58%
+        left: 0
+        right: 0
+
+
+/********************* Media *********************/
++max-screen(1200px)
+    .offer-blocks
+        flex-wrap: wrap
+        justify-content: space-around
+        &__center-section
+            margin: 0
+        &__right-section
+            width: 100%
+            padding-top: 22px
+            flex-direction: row-reverse
+            justify-content: space-around
+            align-items: flex-end
+
++max-screen(840px)
+    .offer-blocks
+        &__left-section
+            width: 100%
+            flex-direction: row
+            justify-content: space-around
+            padding-bottom: 22px
+            align-items: center
+        &__right-section
+            flex-direction: column
+            align-items: center
+        &__element--glasses
+            margin-top: 22px
+
++max-screen(640px)
+    .offer-blocks
+        padding: 0 22px
+        &__left-section
+            flex-direction: column
+            justify-content: space-around
+            .offer-blocks__element
+                &:last-child
+                    margin-top: 22px
+
+
++max-screen(440px)
+    .offer-blocks
+        &__right-section
+            .offer-blocks__info
+                .offer-blocks__name
+                    font-size: 10px
+                    margin-bottom: 10px
+                    br
+                        display: none
