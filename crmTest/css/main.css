@@ -193,6 +193,9 @@ img {
   width: 100%;
   table-layout: fixed;
   color: rgba(0, 0, 0, 0.5); }
+  .table__thead {
+    -webkit-box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.0872962);
+            box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.0872962); }
   .table__tr {
     display: -webkit-box;
     display: -webkit-flex;
@@ -206,6 +209,8 @@ img {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+    .table__tr--body:nth-child(2n) {
+      background-color: rgba(0, 0, 255, 0.01); }
   .table__th {
     display: -webkit-box;
     display: -webkit-flex;
