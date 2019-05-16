@@ -430,7 +430,7 @@
     visibility: hidden;
     pointer-events: none; }
     .catalog__button-group .favorite {
-      background: #6a99e9 url("../dist/img/catalog/heart-active.png") no-repeat center;
+      background: #6a99e9 url("img/catalog/heart-active.png") no-repeat center;
       visibility: visible;
       pointer-events: auto; }
   
@@ -1226,7 +1226,7 @@
     .button--favorites {
       width: 33px;
       height: 33px;
-      background: #6a99e9 url("../dist/img/catalog/heart.png") no-repeat center; }
+      background: #6a99e9 url("img/catalog/heart.png") no-repeat center; }
     .button--catalog {
       padding: 2.5641% 2.82%; }
     .button--priceAndKind {
